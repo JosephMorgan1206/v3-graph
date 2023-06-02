@@ -1,4 +1,4 @@
-const WETH = "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
+const WETH = "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9";
 
 /**
  * @type import('./config').NetworkConfig
@@ -7,7 +7,7 @@ module.exports = {
   network: "polygon-zkevm",
   wNativeAddress: WETH,
   v3: {
-    wNativeStablePoolAddress: "0xcf9b1DDa37D222029eF3476ef436F238F1112C44",
+    wNativeStablePoolAddress: "0x72C6C85cd4f1d16Aec0154e5B3713019B2710790",
     stableIsToken0: false,
     factoryAddress: "0x0063cF53eC20e51c2A9B21ce3FB80023Ae948779",
     startBlock: 585266,
