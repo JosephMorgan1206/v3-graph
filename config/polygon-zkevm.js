@@ -4,7 +4,7 @@ const WETH = "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
  * @type import('./config').NetworkConfig
  */
 module.exports = {
-  network: "mainnet",
+  network: "polygon-zkevm",
   wNativeAddress: WETH,
   v3: {
     wNativeStablePoolAddress: "0xcf9b1DDa37D222029eF3476ef436F238F1112C44",
