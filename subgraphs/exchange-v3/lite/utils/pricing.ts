@@ -5,19 +5,19 @@ import { BigDecimal, BigInt } from "@graphprotocol/graph-ts";
 import { exponentToBigDecimal, safeDiv } from "./index";
 
 // prettier-ignore
-const WETH_ADDRESS = "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c";
+const WETH_ADDRESS = "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9";
 // prettier-ignore
-const USDC_WETH_03_POOL = "0x40B69CA4EBb26f01651CdF559D5B0c2BA3877BcF";
+const USDC_WETH_03_POOL = "0x72C6C85cd4f1d16Aec0154e5B3713019B2710790";
 
 const STABLE_IS_TOKEN0 = "true" as string;
 
 // token where amounts should contribute to tracked volume and liquidity
 // usually tokens that many tokens are paired with s
 // prettier-ignore
-export let WHITELIST_TOKENS: string[] = "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c,0x55d398326f99059ff775485246999027b3197955,0xe9e7cea3dedca5984780bafc599bd69add087d56,0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d,0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c,0x2170ed0880ac9a755fd29b2688956bd959f933f8,0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82".split(",");
+export let WHITELIST_TOKENS: string[] = "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9,0x1E4a5963aBFD975d8c9021ce480b42188849D41d,0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035,0x312Bbe0EC7e16E161Fc571CF7CDD43cdE5A988ce,0xC5015b9d9161Dca7e18e32f6f25C4aD850731Fd4".split(",");
 
 // prettier-ignore
-let STABLE_COINS: string[] = "0x55d398326f99059ff775485246999027b3197955,0xe9e7cea3dedca5984780bafc599bd69add087d56,0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d".split(",");
+let STABLE_COINS: string[] = "0x1E4a5963aBFD975d8c9021ce480b42188849D41d,0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035,0xC5015b9d9161Dca7e18e32f6f25C4aD850731Fd4".split(",");
 
 let MINIMUM_ETH_LOCKED = BigDecimal.fromString("60");
 
